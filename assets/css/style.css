@@ -79,8 +79,8 @@ h2, h3 {
 }
 
 img.portfolioPic {
-    height: 170px;
-    float: left;
+    max-height: 25vh;
+    width: auto;
     margin: 8.83px 10px 10px 0;
 }
 
@@ -176,7 +176,8 @@ input[type=submit] {
 }
 
 .card {
-    width: 33.33%;
+    width: 25%;
+    min-width: 220px;
     float: left;
     padding: 10px;
 }
@@ -189,15 +190,10 @@ input[type=submit] {
 
   h4 {
       color: #ffffff;
-      padding-top: 62%;
 }
 
   img.imageCard {
       margin: 0;
-}
-
-p.mainBio {
-    float: right;
 }
 
 form {
@@ -207,6 +203,10 @@ form {
 
    /* For mobile phones: */
 @media only screen and (max-width: 640px) {
+    header {
+        position: static;
+    }
+    
     div.title {
         width: 100%;
         }
@@ -223,8 +223,7 @@ form {
     img.portfolioPic {
         float: none;
         margin: 0 auto;
-        max-width: 100%;
-        /* height: auto; */
+
     }
     footer {
         margin-top: 15%;
@@ -237,6 +236,10 @@ form {
   @media only screen and (min-width: 768px) {
     div.main {
         margin-bottom: 20%;
+    }
+
+    p.mainBio {
+        width: 70%;
     }
 
 
